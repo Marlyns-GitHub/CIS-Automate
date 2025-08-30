@@ -16,7 +16,7 @@ CIS_Automate is a native PowerShell script focused on automating the hardening o
 
 3. Use
 
-After downloading CIS_Automate, you need to create a folder called Compliance anywhere and extract CIS_Automate on it, your Compliance folder must contain: 
+After downloading CIS_Automate, the Compliance folder can be anywhere and must contain: 
 
 - CIS_MENU.ps1
 - 00_GPO_Compliance.ps1
@@ -28,7 +28,7 @@ After downloading CIS_Automate, you need to create a folder called Compliance an
 - info.md
 - README.md
 
-Next, move the PowerShell script CIS_MENU to the desktop. CIS_MENU is a central interface for managing CIS_Automate.
+Next, move CIS_MENU script on the desktop. CIS_MENU is a central interface for managing CIS_Automate, it must not be inside the Compliance folder.
 
 Notice :
 

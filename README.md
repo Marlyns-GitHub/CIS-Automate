@@ -14,7 +14,7 @@ CIS_Automate is a native PowerShell script focused on automating the hardening o
 - Security Options
 - Others
 
-3. Usage
+3. Use
 
 After downloading CIS_Automate, you need to create a folder called Compliance anywhere and extract CIS_Automate on it, your Compliance folder must contain: 
 

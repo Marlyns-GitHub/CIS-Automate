@@ -1,5 +1,5 @@
-# CIS-Automate
-Automating Active Directory Hardening using CIS Benchmarks Standard
+# CIS-Automate : Automating Active Directory Hardening using CIS Benchmarks Standard
+
 1. Overview
 
 The purpose of this script is to autonate the hardening of Active Directory, I know that Active Directory hardening is complex, it's done manually.
@@ -7,7 +7,7 @@ That's why, I thought to simplify this process and created this PowerShell scrip
 
 2. CIS_Automate
    
-CIS_Automate is a native PowerShell script focused on automating the hardening of the Active Directory, it is a standard and tested in different environments Windows Servers 2k16-2k22, I referred to CIS benchmarks and STIG frameworks. CIS_Automate is a set of PowerShell scripts on a single interface, the hardering include :
+CIS_Automate is a native PowerShell script focused on automating the hardening of Active Directory, it is a standard and tested in different environments Windows Servers 2k16-2k22, I referred to CIS benchmarks and STIG frameworks. CIS_Automate is a set of PowerShell scripts on a single interface, the hardering include :
 
 - Password Policy
 - User Rights Assignment
@@ -19,13 +19,14 @@ CIS_Automate is a native PowerShell script focused on automating the hardening o
 After downloading CIS_Automate, you need to create a folder called Compliance anywhere and extract CIS_Automate on it, your Compliance folder must contain: 
 
 - CIS_MENU.ps1
-- 00_Compliance_CreatedGPO.ps1
-- 01_Compliace_Passwd.ps1
-- 02_Compliance_UserRightsAssignmtnt.ps1
-- 03_Compliance_Security.ps1
-- 04_Compliance_HArdening.ps1
+- 00_GPO_Compliance.ps1
+- 01_Passwd_Compliance.ps1
+- 02_UserRightsAssignmtnt_Compliance.ps1
+- 03_Security_Compliance.ps1
+- 04_HArdening_Compliance.ps1
 - banner.md
 - info.md
+- README.md
 
 Next, move the PowerShell script CIS_MENU to the desktop. CIS_MENU is a central interface for managing CIS_Automate.
 

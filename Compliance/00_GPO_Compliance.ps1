@@ -107,19 +107,6 @@ else {
              $CreateGPO = New-GPO -Name $gpo; $Linkgpo = New-GPLink -Name $gpo -Target $DomainDistinguishedName
         }
      
-    # Copy SecGuide to Localhost
-    $Admx = "\PolicyDefinitions"
-    $Adml = "\PolicyDefinitions\en-US"
-    $Path = $env:windir
-    $PathAdmx = "$Path\$Admx"
-    $PathAdml = "$Path\$Adml"
-
-    if((-not(Test-Path -Path $PathAdmx\SecGuide.amdx)) -and
-       (-not(Test-Path -Path $PathAdml\SecGuide.amdl)))
-       {        
-           Copy-Item -Path .\Compliance\SecGuide\SecGuide.admx -Destination $PathAdmx
-           Copy-Item -Path .\Compliance\SecGuide\SecGuide.adml -Destination $PathAdml
-       }
      Write-Host "[Task 2 :] Successful.                                                          " -ForegroundColor Green -NoNewline; Write-Host "[Ok]" -ForegroundColor Green
      Write-Host ""
      Get-Content .\Compliance\info.md
